@@ -12,10 +12,18 @@ public class Person {
         this.education = new Education();
     }
 
+    public Person(long salary, String role){
+        this.job = new Job();
+        job.setSalary(salary);
+        job.setRole(role);
+        this.education = new Education();
+    }
+
     public long getSalary() {
         return job.getSalary();
     }
 
+    @Override
     public String toString(){
         return job.toString() + "\n" + education.toString();
     }

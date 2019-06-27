@@ -17,6 +17,10 @@ public class Education {
         Collections.addAll(schools, "UMD", "Duke", "Towson", "USC", "Berkley", "WVU", "MC", "Marshal", "UMBC", "NYU");
     }
 
+    public ArrayList<String> getSchools() {
+        return schools;
+    }
+
     @Override
     public String toString(){
         String str = "";
